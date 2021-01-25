@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Projects</title>
+	</head>
+	<body>
+		<header>
+			<h1>Projects</h1>
+		</header>
+		<section>
+			<h2>Trial</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum non massa vel ornare. Nunc non tincidunt massa. Duis euismod feugiat justo vel tincidunt. Integer at tortor mattis, luctus metus nec, maximus diam. Pellentesque in tortor in velit laoreet pulvinar. Suspendisse maximus tristique magna. Suspendisse blandit cursus suscipit. Praesent ac tempor magna, in iaculis dui.
+			</p>
+		</section>
+		<footer>
+			<p>Created with <3 byZeynepKarakaya</p>
+		</footer>
+	</body>
+</html>
