@@ -1,0 +1,51 @@
+/* Text Styling */
+
+.text-center {
+	text-align: center;
+} 
+
+.heading-small {
+	font-size: 1.25rem;
+}
+
+.heading-medium {
+	font-size: 1.5rem;
+}
+
+.heading-big {
+	font-size: 1.75rem;
+}
+
+/* Colors */
+
+.bg-header {
+	background: #fff;
+}
+
+.footer {
+	background: #6b7fd7;
+	height: 75px;
+}
+
+.emphasis {
+	color: #FF499E;
+}
+
+.emphasis:hover {
+	color: #6b7fd7;
+}
+
+.text-color {
+	color: #6b7fd7;
+}
+
+/* Container */
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.socialmedia a{
+	color: #fff;
+}

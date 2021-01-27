@@ -1,0 +1,121 @@
+*{
+/*	margin: 0;
+	padding: 0;*/
+/*	box-sizing: border-box;*/
+}
+
+/*	body{
+background:#ffffff url("images/logo_btn.png") no-repeat fixed center top;*/
+/*	background-color: #ffffff;
+	background-image: url("images/logo_btn.png");*/
+/*	background-size: 100px;*/
+/*	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+}*/
+/*	#box-1 {
+daire için
+	background: #a7a7a7; 
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;*/
+/*	tek bir kenar çizili border için
+	border-left-width: 5px;
+	border-left-color: blue;
+	border-left-style: solid;*/
+/*	kıvrımlı kenar
+	border: 5px red solid; 
+	border-radius: 10px;*/
+/*	border-width: 5px;
+	border-color: rgb(255,0,0);
+	border-style: dotted;
+}*/
+/*.box{
+	width: 50%;
+	height: 100px;
+}
+.box-1{
+	background: rgb(255,0,0);
+}
+.box-2{
+	background: blue;
+}*/
+
+#HomeLink{
+	display: inline-block;
+	width: 200px;
+	height: 100px;
+	background: red;
+}
+
+h2{
+	background: seashell;
+}
+
+.heading1{
+	text-align: center;
+}
+
+.heading2{
+	text-align: left;
+}
+
+.heading3{
+	text-align: right;
+}
+
+#Lorem{
+	/*top right bottom left*/
+/*		margin: 50px 20px 100px 239px;*/
+	/*top-bottom right-left*/
+/*	margin: 50px 100px;*/
+
+/*	margin-top: 50px;
+	margin-right: 100px;
+	margin-bottom: 50px;
+	margin-left: 200px;*/
+	background: #a7a7a7;
+/*	width: 50%;*/
+/*	margin: 0 auto;*/
+/* yukarıdaki ile aynı şey. üst alt0 yatayda ortala	*/
+margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height: auto;
+	border: 1px solid black;
+		box-sizing: border-box;
+		text-align: justify;
+	padding: 20px;
+/*	üsttekiyle aynı
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-top: 20px;*/
+}
+p{
+	letter-spacing: 2px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:active{
+	background-color: white;
+}
+
+a:hover{
+	color: #AA213291;
+}
+
+/*div#box-2{
+	background: red;
+	width: 50%;
+	height: 50px;
+}*/
+/*.box-3 {
+	width: 300px;
+	height: 400px;
+	background-image: url("images/IMG_0185.jpg");
+	background-size: cover;
+}*/
