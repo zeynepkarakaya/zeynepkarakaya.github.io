@@ -17,7 +17,6 @@ html {
 body {
 	display: grid;
 }
-
 /* NavBar Section */
 
 #navbar {
@@ -51,19 +50,24 @@ body {
 	border-bottom: 1px solid #233480;
 }
 
-#logo {
-	align-self: flex-start;
-}
 
-#logo img {
+#logo {
+	justify-self: center;
+}
+#logo img{
+	align-self: flex-start;
 	padding: 0.5rem 0.75rem;
-	margin: 0 0.5rem;
+
 }
 
 #logo img:hover {
 	 transform: scaleX(-1);
 /*	width: 125px;
 	height: 125px;*/
+}
+
+#logo a:hover {
+	border: none;
 }
 
 #resume {
@@ -130,8 +134,11 @@ body {
 }
 
 .footer{
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	justify-content: end;
+	align-content: center;
+	align-items: flex-start;
+	grid-template-columns: repeat(3, 1fr);
 
 }
 .endnote {
@@ -142,7 +149,10 @@ body {
 
 .socialmedia {
 	display: inline-block;
-	align-self: flex-end;
+	grid-column: 3 / span 1;
+	align-self: start;
+	justify-self: end;
+	margin: 0 0.75rem auto;
 }
 
 .socialmedia ul {
@@ -158,14 +168,54 @@ body {
 	padding: 0.75rem 0.75rem 0 0.75rem;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
 
-/*#picture {
-	width: 50%;
-	height: auto;
-}*/
+	body {
+		grid-gap: 2px;
+	}
+	
+	#home {
+		justify-content: center;
+		margin: 0;
+		margin-top: 25px;
+		margin-bottom: 70px;
+		align-items: center;
+		align-content: center;
+		justify-content: space-between;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+	}
+	#picture {
+		grid-column: 3 / span 2;
+		grid-row: 1 / span 1;
+		align-self: center;
+		max-width: 200px;
+		justify-self: center;
+	}
+	#welcome_msg {
+	grid-column: 2 / span 4;
+	grid-row: 2 /span 2;
+	display: grid;
+	align-items: center;
+	justify-content: space-between;
+	grid-gap: 24px;
+	text-align: center;
+	align-self: center;
+	}
+	body {
+	display: grid;
+	}
+	footer {
+		max-height: 40px;
+	}
 
+	.socialmedia{
+		grid-column: 2 / span 1;
+	}
 }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
 /*
 
 yıldız bütün sayfayı kapsayan seçici

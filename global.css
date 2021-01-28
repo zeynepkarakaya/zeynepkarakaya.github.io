@@ -22,9 +22,13 @@
 	background: #fff;
 }
 
+footer {
+	background: #6b7fd7;
+}
+
 .footer {
 	background: #6b7fd7;
-	height: 60px;
+	max-width: 1100px;
 }
 
 .emphasis {
