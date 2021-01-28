@@ -168,19 +168,12 @@ body {
 	padding: 0.75rem 0.75rem 0 0.75rem;
 }
 
-@media only screen and (max-device-width: 500px){
-		body {
+@media only screen and (max-device-width: 650px) {
+
+	body {
 		grid-gap: 2px;
 	}
 	
-	#navbar {
-		padding-top: 0.5rem;
-		padding-bottom: 0.5rem;
-		overflow: hidden;
-		height: 80px;
-		margin: 0.5rem 0.5rem;
-	}
-
 	#home {
 		justify-content: center;
 		margin: 0;
@@ -209,7 +202,9 @@ body {
 	text-align: center;
 	align-self: center;
 	}
-
+	body {
+	display: grid;
+	}
 	footer {
 		max-height: 40px;
 	}
