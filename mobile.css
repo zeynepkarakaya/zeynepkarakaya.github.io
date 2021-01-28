@@ -38,9 +38,7 @@
 	text-align: center;
 	align-self: center;
 	}
-	body {
-	display: grid;
-	}
+
 	footer {
 		max-height: 40px;
 	}
