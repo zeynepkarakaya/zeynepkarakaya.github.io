@@ -143,14 +143,14 @@ body {
 	padding: 0.75rem 0.75rem 0 0.75rem;
 }
 
-#projects {
+#project-details {
 	display: block;
 }
 
 .grid-container {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: 100px repeat(5, 1fr);
+	grid-template-rows: 100px repeat(9, 1fr);
 	justify-content: space-between;
 	align-content: center;
 	grid-gap: 5px;
@@ -163,59 +163,78 @@ header {
 	grid-row: 1 / span 1;
 }
 
-#projects {
+#project-details {
 	grid-column: 2 / span 4;
 	grid-row: 2 / span 4;
+}
 
+#projects {
+	grid-column: 2 / span 4;
+	grid-row: 6 / span 2;
+}
+footer {
+	grid-column: 1 / span 6;
+	grid-row: 8 / span 2;
+}
+
+.container-project-details {
+  	display: grid;
+	grid-template-areas: 
+	'title title title'
+	'project1 project1 project1'
+	'summary summary summary'
+	'visual visual visual'
+	'details details details'
+	;
+	justify-content: space-between;
+}
+
+.title {
+	grid-area: title;
+}
+.project1 {
+	  background-color: #239029;
+    grid-area: project1;
+
+}
+
+.summary {
+    background-color: #8765d5;
+     grid-area: summary;
+}
+.details {
+    background-color: #16a086;
+     grid-area: details;
+}
+.visual {
+    background-color: #e77e23;
+     grid-area: visual;
 }
 
 .container-project {
   	display: grid;
 	grid-template-areas: 
-	'project1 project2'
-	'project1 project2'
-	'project3 project4'
-	'project3 project4';
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+	'project1 project2 project3 project4'
 
 }
 
 .project1 {
     grid-area: project1;
-    width: 300px;
-  	height: 300px;
 }
 
-.project1 img{
-	max-width: 300px;
-	max-height: 300px;
-
-}
 .project2 {
     background-color: #8f44ad;
      grid-area: project2;
-         width: 300px;
-  	height: 300px;
 }
 .project3 {
     background-color: #16a086;
      grid-area: project3;
-         width: 300px;
-  	height: 300px;
 }
 .project4 {
     background-color: #e77e23;
      grid-area: project4;
-         width: 300px;
-  	height: 300px;
 }
 
-footer {
-	grid-column: 1 / span 6;
-	grid-row: 6 / span 1;
-}
 
 
 @media only screen and (max-width: 600px) {

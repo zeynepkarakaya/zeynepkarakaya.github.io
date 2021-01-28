@@ -89,4 +89,28 @@ footer {
 		border-bottom: 0.5px solid #233480;
 	}
 
+	body {
+		grid-gap: 2px;
+	}
+
+	body {
+	display: grid;
+	}
+	footer {
+		max-height: 40px;
+	}
+
+	.socialmedia{
+		grid-column: 2 / span 1;
+	}
+
+		#logo img{
+		max-width: 100px;
+		align-self: center;
+		justify-self: center;
+	}
+	.grid-container {
+	grid-gap: 5vh;
+}
+
 }
