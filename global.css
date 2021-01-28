@@ -24,7 +24,7 @@
 
 .footer {
 	background: #6b7fd7;
-	height: 75px;
+	height: 60px;
 }
 
 .emphasis {
@@ -48,4 +48,8 @@
 
 .socialmedia a{
 	color: #fff;
+}
+
+.footer {
+	margin: 0 auto;
 }
