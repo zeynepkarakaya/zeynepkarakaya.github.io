@@ -193,33 +193,30 @@ footer {
 	grid-area: title;
 }
 .project1 {
-	  background-color: #239029;
     grid-area: project1;
 
 }
 
 .summary {
-    background-color: #8765d5;
      grid-area: summary;
 }
 .details {
-    background-color: #16a086;
      grid-area: details;
 }
 .visual {
-    background-color: #e77e23;
      grid-area: visual;
 }
 
 .container-project {
   	display: grid;
 	grid-template-areas: 
-	'project1 project2 project3 project4'
+	'other other other'
+	'project2 project3 project4'
 
 }
 
-.project1 {
-    grid-area: project1;
+.other{
+	grid-area: other;
 }
 
 .project2 {
