@@ -104,46 +104,38 @@ body {
 	color: #fff;
 }
 
-/* Home Section */
+/* About Section */
 
-#home {
+.container-about {
 	display: grid;
-	max-width: 1200px;
-	max-height: 1000px;
-	margin: 10vh auto;
-	grid-gap: 10px;
-	grid-template-columns: 5% repeat(5, 1fr);
-	grid-template-rows: repeat(3, 1fr);
-	margin-left: 24px;
-	align-items: center;
-	justify-content: end;
-	align-content: center;
-}
-
-#picture {
-	grid-column: 5 / span 2;
-	grid-row: 1/ span 2;
-	justify-self: end;
-	max-width: 300px;
-	min-width: 50px;
-	overflow: hidden;
-}
-
-#picture img {
-	max-width: 100%;
-	height: auto;
-}
-
-#welcome_msg {
-	grid-column: 2 / span 3;
-	grid-row: 2 /span 2;
-	display: grid;
-	align-items: center;
 	justify-content: space-between;
-	grid-gap: 24px;
-	text-align: right;
-	align-self: start;
+	align-content: center;
+	align-items: center;
+	grid-template-areas:
+	'Aboutme Aboutme Aboutme'
+	'Education Education Education'
+	'Experience Experience Experience';
+	grid-gap: 5vh;
+	margin: 0 5vh;
 }
+
+.aboutme {
+	grid-area: Aboutme;
+}
+
+.education {
+	grid-area: Education;
+}
+
+.experience {
+	grid-area: Experience;
+}
+
+.container-about ul {
+	list-style-type: none;
+	padding: 0.5rem;
+}
+
 
 .footer{
 	display: grid;
