@@ -57,3 +57,36 @@ footer {
 .footer {
 	margin: 0 auto;
 }
+
+@media only screen and (max-width: 600px) {
+
+
+#navbar {
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	padding: 0 0.75rem;
+	height: 100px;
+	}
+
+	#navbar ul {
+		list-style-type: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+#navbar ul li a {
+	padding: 0;
+}
+
+
+	#navbar ul li a:active {
+		color: #233480;
+		border-bottom: 0.5px solid #233480;
+	}
+
+}

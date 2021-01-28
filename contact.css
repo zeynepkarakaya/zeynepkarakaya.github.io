@@ -42,7 +42,7 @@ body {
 	padding: 0.5rem;
 }
 
-.About a {
+.Contact a {
 	color: #FF499E;
 }
 
@@ -50,11 +50,11 @@ body {
 	border-bottom: 1px solid #6b7fd7;
 }
 
-.Contact a:hover  {
+.About a:hover  {
 	border-bottom: 1px solid #6b7fd7;
 }
 
-.About a:hover {
+.Contact a:hover {
 	border-bottom: 1px solid #FF499E;
 }
 
@@ -104,19 +104,56 @@ body {
 	color: #fff;
 }
 
-/* About Section */
+/* Form Section */
 
-.container-about {
-	display: grid;
-	justify-content: space-between;
-	align-content: center;
-	align-items: center;
-	grid-template-areas:
-	'Aboutme Aboutme Aboutme'
-	'Education Education Education'
-	'Experience Experience Experience';
-	grid-gap: 5vh;
-	margin: 0 5vh;
+#contact {
+
+	padding: 1rem;
+}
+
+.form-group {
+	padding: 0.25rem 0;
+}
+
+form {
+	color: #fff;
+	background-color: #6b7fd7;
+	padding: 5rem;
+	text-align: center;
+	border-radius: 15px;
+	margin: 2% 10%;
+}
+
+input[type="text"] {
+  min-height: 15px;
+  border-radius: 5px;
+  border:1px solid #cccccc;
+}
+
+.button {
+	width: 75%;
+	text-align: center;
+	margin-bottom: 1rem auto;
+	background: #fff;
+	font-size: 1.25rem;
+	border-radius: 10px;
+	font-family: "Open Sans", sans-serif;
+}
+
+.form-group {
+	padding-bottom: 0.25rem 0;
+}
+
+.form-group label{
+	display: block;
+}
+
+.form-control {
+	width: 75%;
+	padding: 0.4rem;
+	font-size: 1rem;
+	resize: none;
+	border-radius: 5px;
 }
 
 .aboutme {
@@ -175,40 +212,43 @@ body {
 	padding: 0.75rem 0.75rem 0 0.75rem;
 }
 
+.grid-container {
+	display: grid;
+	grid-template-areas: 
+	'header header header'
+	'form form form'
+	'footer footer footer';
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	grid-gap: 3vh;
+}
+
+
+header {
+	grid-area: header;
+}
+
+#contact {
+	grid-area: form;
+}
+
+.letsmeet {
+	color: #6b7fd7;
+}
+
+footer {
+	grid-area: footer;
+	align-self: end;
+}
+
+
 @media only screen and (max-width: 600px) {
 
 	body {
 		grid-gap: 2px;
 	}
-	
-	#home {
-		justify-content: center;
-		margin: 0;
-		margin-top: 25px;
-		margin-bottom: 70px;
-		align-items: center;
-		align-content: center;
-		justify-content: space-between;
-		grid-template-columns: repeat(6, 1fr);
-		grid-template-rows: repeat(3, 1fr);
-	}
-	#picture {
-		grid-column: 3 / span 2;
-		grid-row: 1 / span 1;
-		align-self: center;
-		max-width: 200px;
-		justify-self: center;
-	}
-	#welcome_msg {
-	grid-column: 2 / span 4;
-	grid-row: 2 /span 2;
-	display: grid;
-	align-items: center;
-	justify-content: space-between;
-	grid-gap: 24px;
-	text-align: center;
-	align-self: center;
-	}
+
 	body {
 	display: grid;
 	}
@@ -225,76 +265,7 @@ body {
 		align-self: center;
 		justify-self: center;
 	}
-	#navbar {
-	color: #fff;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	align-content: center;
-	padding: 0 0.75rem;
-	height: 100px;
-	}
-
-	#navbar ul {
-		list-style-type: none;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		padding: 0.5rem;
-	}
-
-	#navbar ul li a {
-		padding: 0.5rem;
-	}
-
-	#navbar a:hover {
-		border-bottom: 1px solid #6b7fd7;
-	}
-
-	#navbar a:active {
-		color: #233480;
-		border-bottom: 1px solid #233480;
-	}
-
-
-	#logo {
-		justify-self: center;
-	}
-	#logo img{
-		align-self: flex-start;
-		padding: 0.5rem 0.75rem;
-
-	}
-
-	#logo img:hover {
-		 transform: scaleX(-1);
-	/*	width: 125px;
-		height: 125px;*/
-	}
-
-	#logo a:hover {
-		border: none;
-	}
-
-	#resume {
-		padding: 0.5rem;
-		border: 2px solid #6b7fd7;
-		border-radius: 4px;
-	}
-
-	#resume a{
-		padding: 0.5rem;
-	}
-
-	#resume:hover {
-		background: #6b7fd7;
-	}
-
-	#resume:active {
-		background: #233480;
-	}
-
-	#resume a:hover{
-		color: #fff;
-	}
+	.grid-container {
+	grid-gap: 5vh;
+}
 }
