@@ -89,21 +89,18 @@ body {
 
 .top {
 	grid-area: top;
-	text-align: center;
-	background: #6b7fd7;
-	width: 30vw;
-	height: 5vw;
 	justify-self: end;
-	border-radius: 5px;
 	display: flex;
-	align-items: center;
-	justify-content: center;
-
+	text-align: center;
 }
 
 .top a {
-		color: #fff;
-
+	background: #6b7fd7;
+	width: 28vw;
+	height: 5vw;
+	color: #fff;
+	border-radius: 5px;
+	padding-top: 1.3vw;
 }
 
 #education {
@@ -122,20 +119,18 @@ body {
 
 .top1 {
 	grid-area: top1;
-	text-align: center;
-	background: #6b7fd7;
-	width: 30vw;
-	height: 5vw;
 	justify-self: end;
-	border-radius: 5px;
 	display: flex;
-	align-items: center;
-	justify-content: center;
-
+	text-align: center;
 }
 
 .top1 a {
-		color: #fff;
+	background: #6b7fd7;
+	width: 28vw;
+	height: 5vw;
+	color: #fff;
+	border-radius: 5px;
+	padding-top: 1.3vw;
 }
 
 #experience {
@@ -143,22 +138,29 @@ body {
 	max-width: 55vw;
 }
 
+#experience ul {
+	display: grid;
+	grid-row-gap: 0.75rem;
+	}
+
+#experience ul li{
+	font-weight: bold;
+}
+
 .top2 {
 	grid-area: top2;
-	text-align: center;
-	background: #6b7fd7;
-	width: 30vw;
-	height: 5vw;
 	justify-self: end;
-	border-radius: 5px;
 	display: flex;
-	align-items: center;
-	justify-content: center;
-
+	text-align: center;
 }
 
 .top2 a {
-		color: #fff;
+	background: #6b7fd7;
+	width: 28vw;
+	height: 5vw;
+	color: #fff;
+	border-radius: 5px;
+	padding-top: 1.3vw;
 }
 
 
@@ -167,22 +169,33 @@ body {
 	padding: 0.5rem;
 }
 
+
 .image1 img {
 	grid-area: Image1;
-	height: 300px;
-	width: 300px;
+	width: 25vw;
 }
 
+
+
 .image2 img {
-	grid-area: Image2;
-	height: 300px;
-	width: 300px;
+
+	width: 25vw;
+}
+
+.image2 {
+		grid-area: Image2;
+	display: flex;
+	flex-direction: column;
+	}
+
+#idf img {
+
+	width: 28vw;
 }
 
 .image3 img {
 	grid-area: Image3;
-	height: 300px;
-	width: 300px;
+	width: 25vw;
 }
 
 .footer{
