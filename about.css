@@ -45,8 +45,11 @@ body {
 	grid-template-areas:
 	'nav nav nav nav'
 	'Aboutme Aboutme Aboutme Image1'
+	'top top top top'
 	'Education Education Education Image2'
-	'Experience Experience Experience Image3';
+	'top1 top1 top1 top1'
+	'Experience Experience Experience Image3'
+	'top2 top2 top2 top2';
 	grid-gap: 5vh;
 	margin: 10vh 5vw;
 }
@@ -61,7 +64,11 @@ body {
 }
 
 #page-nav li{
-	margin: 0.5rem;
+	padding: 0.5rem;
+}
+
+#page-nav li{
+	font-size: 1.5rem;
 }
 
 #page-nav li a:hover{
@@ -70,19 +77,38 @@ body {
 
 #aboutme {
 	grid-area: Aboutme;
-	max-width: 40vw;
+	max-width: 55vw;
 }
 
 .para {
 	padding: 0.5rem;
 	text-align: justify;
-	line-height: 30px;
-	letter-spacing: 1px;
+	line-height: 1.5rem;
+	letter-spacing: 0.05rem;
+}
+
+.top {
+	grid-area: top;
+	text-align: center;
+	background: #6b7fd7;
+	width: 30vw;
+	height: 5vw;
+	justify-self: end;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.top a {
+		color: #fff;
+
 }
 
 #education {
 	grid-area: Education;
-	max-width: 40vw;
+	max-width: 55vw;
 }
 
 #education ul {
@@ -94,32 +120,69 @@ body {
 	font-weight: bold;
 }
 
+.top1 {
+	grid-area: top1;
+	text-align: center;
+	background: #6b7fd7;
+	width: 30vw;
+	height: 5vw;
+	justify-self: end;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.top1 a {
+		color: #fff;
+}
+
 #experience {
 	grid-area: Experience;
-	max-width: 40vw;
+	max-width: 55vw;
 }
+
+.top2 {
+	grid-area: top2;
+	text-align: center;
+	background: #6b7fd7;
+	width: 30vw;
+	height: 5vw;
+	justify-self: end;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.top2 a {
+		color: #fff;
+}
+
 
 .container-about ul {
 	list-style-type: none;
 	padding: 0.5rem;
 }
 
-.image1 {
+.image1 img {
 	grid-area: Image1;
-	max-height: 100px;
-	max-width: 100px;
+	height: 300px;
+	width: 300px;
 }
 
-.image2 {
+.image2 img {
 	grid-area: Image2;
-	max-height: 100px;
-	max-width: 100px;
+	height: 300px;
+	width: 300px;
 }
 
-.image3 {
+.image3 img {
 	grid-area: Image3;
-	max-height: 100px;
-	max-width: 100px;
+	height: 300px;
+	width: 300px;
 }
 
 .footer{
@@ -158,5 +221,96 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+
+
+	.container-about {
+	display: grid;
+	justify-content: center;
+	grid-template-areas:
+	'nav'
+	'Aboutme'
+	'top'
+	'Education'
+	'top1'
+	'Experience'
+	'top2';
+	margin: 0 5vw 5vh 5vw;
+	grid-gap: 5vh;
+}
+
+#page-nav{
+	grid-area: nav;
+	justify-self: center;
+	align-self: start;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 5vh;
+	margin-bottom: 12vh;
+}
+
+#page-nav li{
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+#page-nav li a:hover{
+	color: #FF499E;
+}
+
+#aboutme {
+	grid-area: Aboutme;
+	min-width: 400px;
+}
+
+#education {
+	grid-area: Education;
+		min-width: 400px;
+}
+
+#education ul {
+		display: grid;
+	grid-row-gap: 0.75rem;
+
+}
+#education ul li{
+	font-weight: bold;
+}
+
+#experience {
+	grid-area: Experience;
+		min-width: 400px;
+}
+
+.container-about ul {
+	list-style-type: none;
+	padding: 0.5rem;
+}
+
+.top {
+	justify-self: center;
+}
+
+.top1 {
+	justify-self: center;
+}
+
+.top2 {
+	justify-self: center;
+}
+.image1 {
+	grid-area: Image1;
+display: none;
+}
+
+.image2 {
+	grid-area: Image2;
+display: none;
+}
+
+.image3 {
+	grid-area: Image3;
+display: none;
+}
 
 }

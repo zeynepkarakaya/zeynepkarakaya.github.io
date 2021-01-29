@@ -81,13 +81,11 @@ body {
 .grid-container {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: 100px repeat(9, 1fr);
+	grid-template-rows: 100px repeat(4, 1fr) 350px 55px;
 	justify-content: space-between;
 	align-content: center;
 	grid-gap: 5px;
-	align-items: center;
 }
-
 
 header {
 	grid-column: 1 / span 6;
@@ -101,11 +99,13 @@ header {
 
 #projects {
 	grid-column: 2 / span 4;
-	grid-row: 6 / span 2;
+	grid-row: 6 / span 1;
+	display: grid;
 }
 footer {
 	grid-column: 1 / span 6;
-	grid-row: 8 / span 2;
+	grid-row: 7 / span 1;
+	height: 55px;
 }
 
 .container-project-details {
@@ -114,8 +114,9 @@ footer {
 	'title title title'
 	'project1 project1 project1'
 	'summary summary summary'
-	'visual visual visual'
 	'details details details'
+	'reflection reflection reflection'
+	
 	;
 	justify-content: space-between;
 }
@@ -123,19 +124,17 @@ footer {
 .title {
 	grid-area: title;
 }
-.project1 {
+.project-info {
     grid-area: project1;
-
 }
-
 .summary {
      grid-area: summary;
 }
-.details {
+.process {
      grid-area: details;
 }
-.visual {
-     grid-area: visual;
+.reflection {
+     grid-area: reflection;
 }
 
 .container-project {
@@ -154,13 +153,25 @@ footer {
 
      grid-area: project2;
 }
+
+.project2:hover {
+	opacity: 0.7;
+}
+
 .project3 {
 
      grid-area: project3;
 }
+
+.project3:hover {
+	opacity: 0.7;
+}
 .project4 {
 
      grid-area: project4;
+}
+.project4:hover {
+	opacity: 0.7;
 }
 
 .project2 img {
@@ -190,5 +201,38 @@ footer {
 	align-content: center;
 
 }
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 100px repeat(4, 1fr) 855px 10px 55px;
+	justify-content: start;
+	align-content: start;
+	grid-gap: 10px;
+
+}
+
+
+header {
+	grid-column: 1 / span 6;
+	grid-row: 1 / span 1;
+}
+
+#project-details {
+	grid-column: 2 / span 4;
+	grid-row: 2 / span 4;
+}
+
+#projects {
+	grid-column: 2 / span 4;
+	grid-row: 6 / span 1;
+	display: grid;
+}
+footer {
+	grid-column: 1 / span 6;
+	grid-row: 8 / span 1;
+	height: 55px;
+	margin-top: 10px;
+}
+
 
 }
