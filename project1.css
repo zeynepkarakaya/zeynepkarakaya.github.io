@@ -80,7 +80,7 @@ body {
 
 .grid-container {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: 5vw repeat(4, 1fr) 10vw;
 	grid-template-rows: 100px repeat(4, 1fr) 350px 55px;
 	justify-content: space-between;
 	align-content: center;
@@ -93,7 +93,7 @@ header {
 }
 
 #project-details {
-	grid-column: 2 / span 4;
+	grid-column: 1 / span 6;
 	grid-row: 2 / span 4;
 }
 
@@ -117,27 +117,54 @@ footer {
 	'summary summary summary'
 	'details details details'
 	'reflection reflection reflection'
-	
 	;
 	justify-content: space-between;
+	margin: 10vh auto;
+
+	grid-gap: 10vh;
+	line-height: 2rem;
 }
 
 .title {
 	grid-area: title;
+	line-height: 4rem;
 }
 .project-info {
     grid-area: project1;
+    margin: 1% 10% 1% 10%;
+    text-align: left;
+    border: 2px solid black;
+    max-width: 40%;
+    border-radius: 5px;
+     padding: 2rem;
 }
 .summary {
      grid-area: summary;
+     margin: 0 10vw;
+     text-align: justify;
+ 
 }
 .process {
      grid-area: details;
-}
-.reflection {
-     grid-area: reflection;
+     margin: 0 10vw;
+     text-align: justify;
 }
 
+.process ul {
+		list-style-type: none;
+		padding: 1rem;
+		color: #5c5763;
+}
+
+.reflection {
+     grid-area: reflection;
+     margin: 0 10vw;
+     text-align: justify;
+}
+
+.important{
+	font-weight: bold;
+}
 .container-project {
   	display: grid;
 	grid-template-areas: 
@@ -186,6 +213,90 @@ footer {
 .project4 img {
 	width: 200px;
 	height: 200px;
+}
+
+#marija {
+	max-width: 50vw;
+	max-height: 60vh;
+}
+
+#dora {
+	max-width: 50vw;
+	max-height: 40vh;
+}
+
+.DV {
+	max-width: 40vw;
+	max-height: 30vh;
+}
+
+#design-vision {
+	display: flex;
+	flex-direction: column;
+}
+
+#concept {
+	max-width: 50vw;
+	max-height: 60vh;
+}
+
+.images img {
+	max-width: 40vw;
+	max-height: 30vh;
+}
+
+.button {
+	border: 2px solid #FF499E;
+	border-radius: 5px;
+		max-width: 40vw;
+			background: #FF499E;
+
+}
+
+.button:hover {
+	background: #fff;
+
+}
+
+.button a{
+
+	color: #fff;
+	font-weight: bold;
+	padding-left: 0.5rem;
+
+
+}
+
+.button a:hover{
+		color: #FF499E;
+
+}
+
+.title {
+	background-image: url(lyrix_2.png);
+	background-position: center;
+	background-size: cover;
+	height: 400px;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 0.5rem;
+	padding-left: 5rem;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.title h1 {
+	font-size: 4rem;
+	font-family: Avenir;
+}
+
+.title h3 {
+	font-size: 1.5rem;
+	font-weight: lighter;
+	font-style: italic;
+
 }
 
 @media only screen and (max-width: 600px) {
