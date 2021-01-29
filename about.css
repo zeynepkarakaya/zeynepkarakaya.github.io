@@ -43,14 +43,32 @@ body {
 	align-content: center;
 	align-items: center;
 	grid-template-areas:
+	'nav nav nav nav'
 	'Aboutme Aboutme Aboutme Image1'
 	'Education Education Education Image2'
 	'Experience Experience Experience Image3';
 	grid-gap: 5vh;
-	margin: 15vh 15vw;
+	margin: 10vh 5vw;
 }
 
-.aboutme {
+#page-nav{
+	grid-area: nav;
+	width: 40vw;
+	height: 10vh;
+	justify-self: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+#page-nav li{
+	margin: 0.5rem;
+}
+
+#page-nav li a:hover{
+	color: #FF499E;
+}
+
+#aboutme {
 	grid-area: Aboutme;
 	max-width: 40vw;
 }
@@ -62,21 +80,21 @@ body {
 	letter-spacing: 1px;
 }
 
-.education {
+#education {
 	grid-area: Education;
 	max-width: 40vw;
 }
 
-.education ul {
+#education ul {
 		display: grid;
 	grid-row-gap: 0.75rem;
 
 }
-.education ul li{
+#education ul li{
 	font-weight: bold;
 }
 
-.experience {
+#experience {
 	grid-area: Experience;
 	max-width: 40vw;
 }
