@@ -112,32 +112,65 @@ body {
 	align-content: center;
 	align-items: center;
 	grid-template-areas:
-	'Aboutme Aboutme Aboutme'
-	'Education Education Education'
-	'Experience Experience Experience';
+	'Aboutme Aboutme Aboutme Image1'
+	'Education Education Education Image2'
+	'Experience Experience Experience Image3';
 	grid-gap: 5vh;
-	margin: 0 5vh;
+	margin: 15vh 15vw;
 }
 
 .aboutme {
 	grid-area: Aboutme;
+	max-width: 40vw;
 }
 
-.intro {
+.para {
 	padding: 0.5rem;
+	text-align: justify;
+	line-height: 30px;
+	letter-spacing: 1px;
 }
 
 .education {
 	grid-area: Education;
+	max-width: 40vw;
+}
+
+.education ul {
+		display: grid;
+	grid-row-gap: 0.75rem;
+
+}
+.education ul li{
+	font-weight: bold;
 }
 
 .experience {
 	grid-area: Experience;
+	max-width: 40vw;
 }
 
 .container-about ul {
 	list-style-type: none;
 	padding: 0.5rem;
+}
+
+.image1 {
+	grid-area: Image1;
+	max-height: 100px;
+	max-width: 100px;
+}
+
+.image2 {
+	grid-area: Image2;
+	max-height: 100px;
+	max-width: 100px;
+}
+
+.image3 {
+	grid-area: Image3;
+	max-height: 100px;
+	max-width: 100px;
 }
 
 .footer{

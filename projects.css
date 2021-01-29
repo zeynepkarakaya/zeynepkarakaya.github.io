@@ -179,6 +179,100 @@ header {
 	justify-content: center;
 	align-items: center;
 	align-content: center;
+	margin: 5vh auto;
+	grid-gap: 1rem;
+
+}
+
+.project1 {
+    grid-area: project1;
+    width: 300px;
+  	height: 300px;
+  	display: flex;
+}
+
+.project1 img {
+	max-width: 300px;
+	max-height: 300px;
+}
+
+.project1:hover {
+	opacity: 0.85;
+}
+
+.project1 h2 {
+	display: inline-block;
+}
+.project2 {
+    background-color: #8f44ad;
+     grid-area: project2;
+         width: 300px;
+  	height: 300px;
+}
+
+.project2 img {
+	max-width: 300px;
+	max-height: 300px;
+}
+
+.project2:hover {
+	opacity: 0.85;
+}
+
+.project3 {
+    background-color: #16a086;
+     grid-area: project3;
+         width: 300px;
+  	height: 300px;
+}
+
+.project3 img {
+	max-width: 300px;
+	max-height: 300px;
+}
+
+.project3:hover {
+	opacity: 0.85;
+}
+
+.project4 {
+     grid-area: project4;
+         width: 300px;
+  	height: 300px;
+}
+.project4 img {
+	width: 300px;
+	height: 300px;
+}
+
+.project4:hover {
+	opacity: 0.85;
+}
+
+footer {
+	grid-column: 1 / span 6;
+	grid-row: 6 / span 1;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+			#logo img{
+		max-width: 100px;
+		align-self: center;
+		justify-self: center;
+	}
+
+	.container-project {
+  	display: grid;
+	grid-template-areas: 
+	'project1'
+	'project2'
+	'project3'
+	'project4';
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 
 }
 
@@ -211,18 +305,4 @@ header {
          width: 300px;
   	height: 300px;
 }
-
-footer {
-	grid-column: 1 / span 6;
-	grid-row: 6 / span 1;
-}
-
-
-@media only screen and (max-width: 600px) {
-
-			#logo img{
-		max-width: 100px;
-		align-self: center;
-		justify-self: center;
-	}
 }
