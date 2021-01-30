@@ -116,7 +116,6 @@ header {
     grid-area: project1;
     width: 300px;
   	height: 300px;
-  	display: flex;
 }
 
 .project1 img {
