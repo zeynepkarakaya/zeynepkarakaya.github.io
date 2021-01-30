@@ -244,9 +244,9 @@ footer {
 	max-height: 40vh;
 }
 
-.DV {
-	max-width: 40vw;
-	max-height: 30vh;
+.image {
+	max-width: 70vw;
+	max-height: 70vh;
 }
 
 #design-vision {
@@ -295,7 +295,8 @@ footer {
 	background-image: url(rijkss.png);
 	background-position: center;
 	background-size: cover;
-	height: 400px;
+	max-height: 400px;
+	min-height: 300px;
 	background-repeat: no-repeat;
 	display: flex;
 	flex-direction: column;
@@ -323,11 +324,11 @@ footer {
 }
 .grid-container {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: 100px repeat(4, 1fr) 855px 10px 55px;
 	justify-content: start;
 	align-content: start;
-	grid-gap: 10px;
+	grid-gap: 0.5vh;
 
 }
 
@@ -338,21 +339,91 @@ header {
 }
 
 #project-details {
-	grid-column: 2 / span 4;
+	grid-column: 1 / span 2;
 	grid-row: 2 / span 4;
 }
 
 #projects {
-	grid-column: 2 / span 4;
+	grid-column: 2 / span 2;
 	grid-row: 6 / span 1;
 	display: grid;
+	margin-bottom: 1vh;
 }
 footer {
 	grid-column: 1 / span 6;
 	grid-row: 8 / span 1;
 	height: 55px;
-	margin-top: 10px;
+	margin-top: 0;
 }
 
+.container-project-details {
+  	display: grid;
+	grid-template-areas: 
+	'title title title'
+	'project1 project1 project1'
+	'summary summary summary'
+	'details details details'
+	'reflection reflection reflection'
+	;
+	justify-content: space-between;
+	margin: 0 auto;
 
+	grid-gap: 0;
+	line-height: 1.5rem;
+}
+
+.container-project-details h3 {
+	color: #FF499E;
+	font-size: 2.5rem;
+	padding: 1rem;
+}
+
+.container-project-details h4 {
+	color: #6b7fd7;
+	font-size: 1.5rem;
+	padding: 1.5rem;
+}
+
+.title {
+	grid-area: title;
+	line-height: 4rem;
+     margin: 2% 1% 2% 5%;
+}
+.project-info {
+    grid-area: project1;
+    margin: 2% 5% 2% 5%;
+    text-align: left;
+    border: 2px solid black;
+    max-width: 80%;
+    border-radius: 5px;
+     padding: 2rem;
+}
+.summary {
+     grid-area: summary;
+     margin: 0 10vw;
+     text-align: justify;
+ 
+}
+.process {
+     grid-area: details;
+     margin: 0 10vw;
+     text-align: justify;
+}
+
+.process ul {
+		list-style-type: none;
+		padding: 1rem;
+		color: #5c5763;
+}
+
+.process ol {
+		padding: 1rem;
+		color: #5c5763;
+}
+
+.reflection {
+     grid-area: reflection;
+     margin: 0 10vw;
+     text-align: justify;
+}
 }

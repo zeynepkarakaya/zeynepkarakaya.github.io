@@ -187,6 +187,7 @@ footer {
 
 .other{
 	grid-area: other;
+		color: #6b7fd7;
 }
 
 .project2 {
@@ -237,9 +238,9 @@ footer {
 	max-height: 40vh;
 }
 
-.DV {
-	max-width: 40vw;
-	max-height: 30vh;
+.image {
+	max-width: 50vw;
+	max-height: 40vh;
 }
 
 #design-vision {
