@@ -1,3 +1,25 @@
+/* General */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: #6b7fd7;
+}
+
+html {
+	font-family: "Open Sans", sans-serif;
+	scroll-behavior: smooth;
+}
+
+body {
+	display: grid;
+}
+
 /* Text Styling */
 
 .text-center {
@@ -59,6 +81,42 @@ footer {
 	margin: 0 auto;
 }
 
+/* Footer */
+
+.footer{
+	display: grid;
+	justify-content: end;
+	align-content: center;
+	align-items: flex-start;
+	grid-template-columns: repeat(3, 1fr);
+
+}
+
+/*footer {
+	margin-top: 2.5vh;
+}*/
+
+.socialmedia {
+	display: inline-block;
+	grid-column: 3 / span 1;
+	align-self: start;
+	justify-self: end;
+	margin: 0 0.75rem auto;
+}
+
+.socialmedia ul {
+	list-style-type: none;
+	display: flex;
+	align-items: flex-end;
+	align-content: flex-end;
+	justify-content: flex-end;
+}
+.socialmedia ul li a {
+	font-size: 2rem;
+	display: inline-block;
+	padding: 0.75rem 0.75rem 0 0.75rem;
+}
+
 /* NavBar */
 
 #navbar {
@@ -105,9 +163,7 @@ footer {
 }
 
 #logo img:hover {
-	 transform: scaleX(-1);
-/*	width: 125px;
-	height: 125px;*/
+	transform: scaleX(-1);
 }
 
 #logo a:hover {
@@ -121,7 +177,7 @@ footer {
 
 #resume a{
 	padding: 0.5rem 1rem;
-		border: 2px solid #6b7fd7;
+	border: 2px solid #6b7fd7;
 	border-radius: 4px;
 }
 
@@ -136,16 +192,15 @@ footer {
 
 @media only screen and (max-width: 600px) {
 
-
-#navbar {
-	color: #fff;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	align-content: center;
-	padding: 0 0.75rem;
-	height: 100px;
-	max-width: 550px;
+	#navbar {
+		color: #fff;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		align-content: center;
+		padding: 0 0.75rem;
+		height: 100px;
+		max-width: 550px;
 	}
 
 	#navbar ul {
@@ -158,9 +213,9 @@ footer {
 
 
 
-#navbar ul li a {
-	padding: 0;
-}
+	#navbar ul li a {
+		padding: 0;
+	}
 
 
 	#navbar ul li a:active {
@@ -173,7 +228,7 @@ footer {
 	}
 
 	body {
-	display: grid;
+		display: grid;
 	}
 	footer {
 		max-height: 40px;
@@ -183,14 +238,14 @@ footer {
 		grid-column: 2 / span 1;
 	}
 
-		#logo img{
+	#logo img{
 		max-width: 100px;
 		align-self: center;
 		justify-self: center;
 	}
 	.grid-container {
-	grid-gap: 5vh;
-}
+		grid-gap: 5vh;
+	}
 
 
 }

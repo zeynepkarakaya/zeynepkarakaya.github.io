@@ -1,22 +1,3 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-a {
-	text-decoration: none;
-	color: #6b7fd7;
-}
-
-html {
-	font-family: "Open Sans", sans-serif;
-	scroll-behavior: smooth;
-}
-
-body {
-	display: grid;
-}
 /* NavBar Section */
 
 .Contact a {
@@ -38,9 +19,9 @@ body {
 /* Form Section */
 
 .container-contact p {
-		margin: 1vh 20vw 4.75vh 20vw;
-		text-align: center;
-		line-height: 1.5rem;
+	margin: 1vh 20vw 4.75vh 20vw;
+	text-align: center;
+	line-height: 1.5rem;
 }
 
 #contact {
@@ -64,9 +45,9 @@ form {
 }
 
 input[type="text"] {
-  min-height: 15px;
-  border-radius: 5px;
-  border:1px solid #cccccc;
+	min-height: 15px;
+	border-radius: 5px;
+	border:1px solid #cccccc;
 }
 
 .button {
@@ -74,11 +55,11 @@ input[type="text"] {
 	text-align: center;
 	background: #fff;
 	border-radius: 10px;
-		cursor: pointer;
+	cursor: pointer;
 }
 
 .button:hover {
-opacity: 0.8;
+	opacity: 0.8;
 }
 
 .button.hover {
@@ -102,40 +83,6 @@ opacity: 0.8;
 	border-radius: 5px;
 }
 
-.footer{
-	display: grid;
-	justify-content: end;
-	align-content: center;
-	align-items: flex-start;
-	grid-template-columns: repeat(3, 1fr);
-
-}
-.endnote {
-	text-align: center;
-	color: #fff;
-	display: inline-block;
-} 
-
-.socialmedia {
-	display: inline-block;
-	grid-column: 3 / span 1;
-	align-self: start;
-	justify-self: end;
-	margin: 0 0.75rem auto;
-}
-
-.socialmedia ul {
-	list-style-type: none;
-	display: flex;
-	align-items: flex-end;
-	align-content: flex-end;
-	justify-content: flex-end;
-}
-.socialmedia ul li a {
-	font-size: 2rem;
-	display: inline-block;
-	padding: 0.75rem 0.75rem 0 0.75rem;
-}
 
 .grid-container {
 	display: grid;
@@ -179,7 +126,7 @@ button {
 	font-size: 1.25rem;
 	color: #6b7fd7;
 	width: 50%;
-	  border:1px solid #cccccc;
+	border:1px solid #cccccc;
 
 }
 
@@ -191,7 +138,7 @@ button {
 	}
 
 	body {
-	display: grid;
+		display: grid;
 	}
 	footer {
 		max-height: 40px;
@@ -201,34 +148,34 @@ button {
 		grid-column: 2 / span 1;
 	}
 
-		#logo img{
+	#logo img{
 		max-width: 100px;
 		align-self: center;
 		justify-self: center;
 	}
 	.grid-container {
-	grid-gap: 5vh;
-}
+		grid-gap: 5vh;
+	}
 
-form {
-	color: #fff;
-	background-color: #6b7fd7;
-	padding: 2rem;
-	text-align: center;
-	border-radius: 10px;
-	margin: 0 8vw 1vh 8vw;
-	padding-top: 1rem;
-}
+	form {
+		color: #fff;
+		background-color: #6b7fd7;
+		padding: 2rem;
+		text-align: center;
+		border-radius: 10px;
+		margin: 0 8vw 1vh 8vw;
+		padding-top: 1rem;
+	}
 
-.container-contact p {
+	.container-contact p {
 		margin: 1vh 10vw 4.75vh 10vw;
 		text-align: center;
 		line-height: 1.5rem;
-}
+	}
 
-header {
-margin-bottom: 0;
-}
+	header {
+		margin-bottom: 0;
+	}
 
 
 }
