@@ -132,7 +132,6 @@ header {
 	display: inline-block;
 }
 .project2 {
-    background-color: #8f44ad;
      grid-area: project2;
          width: 300px;
   	height: 300px;
@@ -148,7 +147,6 @@ header {
 }
 
 .project3 {
-    background-color: #16a086;
      grid-area: project3;
          width: 300px;
   	height: 300px;
