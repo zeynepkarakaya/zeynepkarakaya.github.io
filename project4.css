@@ -257,33 +257,35 @@ footer {
 	max-height: 30vh;
 }
 
-.container-project-details a {
-	border: 2px solid #6b7fd7;
+.button {
+	border: 2px solid #FF499E;
 	border-radius: 5px;
-			background: #6b7fd7;
-			color: #fff;
-	font-weight: bold;
-	padding: 1rem;
-	display: inline-block;
-	height: 1.5rem;
-	align-items: center;
+		max-width: 40vw;
+			background: #FF499E;
 
 }
 
-.container-project-details a:hover {
-	opacity: 0.6;
+.button:hover {
+	background: #fff;
 
 }
 
 .button a{
 
-	
+	color: #fff;
+	font-weight: bold;
+	padding-left: 0.5rem;
 
 
 }
 
+.button a:hover{
+		color: #FF499E;
+
+}
+
 .title {
-	background-image: url(lyrix_2.png);
+	background-image: url(passingo1.png);
 	background-position: center;
 	background-size: cover;
 	height: 400px;

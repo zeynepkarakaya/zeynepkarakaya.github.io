@@ -49,10 +49,11 @@ body {
 form {
 	color: #fff;
 	background-color: #6b7fd7;
-	padding: 5rem;
+	padding: 4rem;
+	padding-top: 1.25rem;
 	text-align: center;
 	border-radius: 15px;
-	margin: 2% 10%;
+	margin: 5vh 20vw 4.75vh 20vw;
 }
 
 input[type="text"] {
@@ -72,11 +73,12 @@ input[type="text"] {
 }
 
 .form-group {
-	padding-bottom: 0.25rem 0;
+	padding-bottom: 1rem;
 }
 
 .form-group label{
 	display: block;
+	line-height: 2rem;
 }
 
 .form-control {
@@ -85,27 +87,6 @@ input[type="text"] {
 	font-size: 1rem;
 	resize: none;
 	border-radius: 5px;
-}
-
-.aboutme {
-	grid-area: Aboutme;
-}
-
-.intro {
-	padding: 0.5rem;
-}
-
-.education {
-	grid-area: Education;
-}
-
-.experience {
-	grid-area: Experience;
-}
-
-.container-about ul {
-	list-style-type: none;
-	padding: 0.5rem;
 }
 
 .footer{
@@ -165,7 +146,7 @@ header {
 }
 
 #letsmeet {
-	color: #6b7fd7;
+	color: #FF499E;
 }
 
 footer {
@@ -199,4 +180,15 @@ footer {
 	.grid-container {
 	grid-gap: 5vh;
 }
+
+form {
+	color: #fff;
+	background-color: #6b7fd7;
+	padding: 2rem;
+	text-align: center;
+	border-radius: 10px;
+	margin: 4vh 8vw 6vh 8vw;
+	padding-top: 1rem;
+}
+
 }
