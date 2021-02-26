@@ -31,6 +31,7 @@
 
 .form-group {
 	padding: 0.25rem 0;
+	padding-bottom: 1rem;
 }
 
 form {
@@ -62,14 +63,6 @@ input[type="text"] {
 	opacity: 0.8;
 }
 
-.button.hover {
-	opacity: 0.5;
-}
-
-.form-group {
-	padding-bottom: 1rem;
-}
-
 .form-group label{
 	display: block;
 	line-height: 2rem;
@@ -94,7 +87,6 @@ input[type="text"] {
 	align-items: center;
 	align-content: center;
 }
-
 
 header {
 	grid-area: header;
@@ -127,9 +119,7 @@ button {
 	color: #6b7fd7;
 	width: 50%;
 	border:1px solid #cccccc;
-
 }
-
 
 @media only screen and (max-width: 600px) {
 
@@ -176,6 +166,5 @@ button {
 	header {
 		margin-bottom: 0;
 	}
-
 
 }
