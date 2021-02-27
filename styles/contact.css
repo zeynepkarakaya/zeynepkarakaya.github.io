@@ -130,9 +130,6 @@ button {
 	body {
 		display: grid;
 	}
-	footer {
-		max-height: 40px;
-	}
 
 	.socialmedia{
 		grid-column: 2 / span 1;

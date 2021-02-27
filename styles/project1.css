@@ -188,19 +188,17 @@ footer {
 	max-height: 30vh;
 }
 
-#design-vision {
-	display: flex;
-	flex-direction: column;
-}
-
 #concept {
 	max-width: 50vw;
 	max-height: 60vh;
 }
 
+.images {
+	display: flex;
+}
+
 .images img {
-	max-width: 40vw;
-	max-height: 30vh;
+	max-width: 300px;
 }
 
 .container-project-details a {
@@ -251,7 +249,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
 
 	.container-project {
 		display: grid;
@@ -305,6 +303,10 @@ footer {
 		max-width: 80%;
 		border-radius: 5px;
 		padding: 2rem;
+	}
+
+	.images {
+		flex-direction: column;
 	}
 
 

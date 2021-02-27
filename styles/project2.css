@@ -259,6 +259,21 @@ footer {
 
 @media only screen and (max-width: 600px) {
 
+	body {
+		max-width: 100%;
+	}
+
+.grid-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: center;
+}
+
+footer {
+	height: 55px;
+}
+
 	.container-project {
 		display: grid;
 		grid-template-areas: 
@@ -269,52 +284,20 @@ footer {
 		justify-content: center;
 		align-items: center;
 		align-content: center;
-
-	}
-	.grid-container {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: 100px repeat(4, 1fr) 855px 10px 55px;
-		justify-content: start;
-		align-content: start;
-		grid-gap: 0.5vh;
-	}
-
-
-	header {
-		grid-column: 1 / span 6;
-		grid-row: 1 / span 1;
-	}
-
-	#project-details {
-		grid-column: 1 / span 2;
-		grid-row: 2 / span 4;
-	}
-
-	#projects {
-		grid-column: 2 / span 2;
-		grid-row: 6 / span 1;
-		display: grid;
-		margin-bottom: 1vh;
-	}
-	footer {
-		grid-column: 1 / span 6;
-		grid-row: 8 / span 1;
-		height: 55px;
-		margin-top: 0;
 	}
 
 	.container-project-details {
 		display: grid;
 		grid-template-areas: 
-		'title title title'
-		'project1 project1 project1'
-		'summary summary summary'
-		'details details details'
-		'reflection reflection reflection'
+		'title'
+		'project1'
+		'summary'
+		'details'
+		'reflection'
 		;
 		justify-content: space-between;
-		margin: 0 auto;
+		margin: 0 60px;
+		max-width: 500px;
 		grid-gap: 0;
 		line-height: 1.5rem;
 	}
@@ -347,22 +330,19 @@ footer {
 
 	.project-info {
 		grid-area: project1;
-		margin: 2% 5% 2% 5%;
 		text-align: left;
 		border: 2px solid black;
-		max-width: 80%;
+		max-width: 100%;
 		border-radius: 5px;
 		padding: 2rem;
 	}
 	.summary {
 		grid-area: summary;
-		margin: 0 10vw;
 		text-align: justify;
 		
 	}
 	.process {
 		grid-area: details;
-		margin: 0 10vw;
 		text-align: justify;
 	}
 
@@ -379,7 +359,6 @@ footer {
 
 	.reflection {
 		grid-area: reflection;
-		margin: 0 10vw;
 		text-align: justify;
 	}
 

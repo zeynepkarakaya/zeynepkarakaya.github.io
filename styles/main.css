@@ -11,7 +11,7 @@
 	display: grid;
 	max-width: 1200px;
 	max-height: 1000px;
-	margin: 9.5vh auto;
+	margin: 10.380vh auto;
 	grid-gap: 10px;
 	grid-template-columns: 5% repeat(5, 1fr);
 	grid-template-rows: repeat(3, 1fr);
@@ -59,7 +59,7 @@
 		justify-content: center;
 		margin: 0;
 		margin-top: 25px;
-		margin-bottom: 8vh;
+		margin-bottom: 7.8vh;
 		align-items: center;
 		align-content: center;
 		justify-content: space-between;
@@ -83,17 +83,7 @@
 		text-align: center;
 		align-self: center;
 	}
-	body {
-		display: grid;
-	}
-	footer {
-		max-height: 40px;
-		margin-top: 3vh;
-	}
 
-	.socialmedia{
-		grid-column: 2 / span 1;
-	}
 
 	#logo img{
 		max-width: 100px;
