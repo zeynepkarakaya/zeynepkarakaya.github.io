@@ -156,7 +156,8 @@ footer {
 		'project1'
 		'project2'
 		'project3'
-		'project4';
+		'project4'
+		'project5';
 		justify-content: center;
 		align-items: center;
 		align-content: center;
@@ -192,9 +193,9 @@ footer {
 		width: 300px;
 		height: 300px;
 	}
-		.project5 {
+	.project5 {
 		background-color: #e77e23;
-		grid-area: project4;
+		grid-area: project5;
 		width: 300px;
 		height: 300px;
 	}
