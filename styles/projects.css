@@ -40,7 +40,7 @@ header {
 }
 
 #projects {
-	grid-column: 2 / span 4;
+	grid-column: 3 / span 4;
 	grid-row: 2 / span 4;
 
 }
@@ -122,6 +122,20 @@ header {
 	opacity: 0.7;
 }
 
+.project5 {
+	grid-area: project5;
+	width: 300px;
+	height: 300px;
+}
+.project5 img {
+	width: 300px;
+	height: 300px;
+}
+
+.project5:hover {
+	opacity: 0.7;
+}
+
 footer {
 	grid-column: 1 / span 6;
 	grid-row: 6 / span 1;
@@ -173,6 +187,12 @@ footer {
 		height: 300px;
 	}
 	.project4 {
+		background-color: #e77e23;
+		grid-area: project4;
+		width: 300px;
+		height: 300px;
+	}
+		.project5 {
 		background-color: #e77e23;
 		grid-area: project4;
 		width: 300px;
