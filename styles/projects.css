@@ -41,7 +41,7 @@ header {
 
 #projects {
 	grid-column: 2 / span 4;
-	grid-row: 3 / span 4;
+	grid-row: 2 / span 4;
 
 }
 
